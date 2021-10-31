@@ -9,16 +9,23 @@ Unfortunately, Newsela is not a publicly available dataset. Only place the raw N
 - Finetune a BERT model to do readability classification task:
 
 	```shell
-	python -m neural-readability.bert.finetune
+	python ./neural_readability/finetune.py
 	```
 
 - Train a BiLSTM model to do readability classification task:
 
 	```shell
-	python -m neural-readablity.lstm.train
+	python ./neural_readability/train.py
 	```
 
 Unless otherwise specified, the training / validation / testing logs should be found in ```./logs/```. More usage scripts can be found in ```./scripts/```.
+
+## Trained models
+
+|  Arch  | dataset |                             Link                             |
+| :----: | :-----: | :----------------------------------------------------------: |
+|  BERT  | Newsela | [Download](https://lxylab.oss-cn-shanghai.aliyuncs.com/Neural-Readability/BERT/checkpoint15.pt) |
+| BiLSTM | Newsela | [Download](https://lxylab.oss-cn-shanghai.aliyuncs.com/Neural-Readability/BiLSTM/checkpoint100.pt) |
 
 ## Acknowledgements
 
